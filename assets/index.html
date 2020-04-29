@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<div id="game">
+    <h1> The Psychic Game </h1>
+    <p>Guess what letter I'm thinking of?</p>
+    <p>Wins:</p>
+    <p>Losses:</p>
+    <p>Guesses Left:</p>
+    <p>Your Guesses so far:</p>
+</div>
+
+<script type="text/javascript">
+
+
+    
+	
+	
+   
+
+// The app randomly picks a letter
+    // Possibly Math.random and Math.floor; Do I use an array here? For Loop?
+    var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
+
+// The user has to guess which letter the app chose. 
+  // I'll probably need .onkeyup here. 
+
+
+// Wins: (# of times the user has guessed the letter correctly)
+    // Have a variable for the number of correct guesses
+        var wins = 0;
+
+// Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
+    //Have a variable for the number of incorrect guesses
+    var losses = 0;
+
+// Guesses Left: (# of guesses left. This will update)
+    //Start a variable at 10
+    var numGuessesLeft = 9;
+
+// Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
+    //Will need .onkeyup and other JS to combine, record, and store as other data types. Need to review.
+    var guessSoFar = [];
+
+// When the player wins or loses, increase or decrease the Wins and Losses counter 
+    //If/Else Statements?? Review syntax.
+    //If user selects same letter as app, wins counter increaes by 1; and var numGuessesLeft = 9
+    //If user selects a different letter than app, wins and losses counters don't change until all 9 guesses are exhausted;
+   
+
+// And start the game over again (without refreshing the page).
+    //Reset  var numGuessesLeft when all 9 guesses are exhausted, 
+   // var numGuessesLeft resets to 9.
+ 
+
+
+</script>
+
+   
+
+<!---->
+</body>
+</html>
